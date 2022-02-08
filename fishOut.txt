@@ -1,0 +1,26 @@
+fishOut.txt
+Numer of distinct words: 20
+Longest Word: LITTLE
+Most Frequent Word: FISH
+Least Frequent Word: SAY
+Shortest Meaningful Word: OF
+A    Frequency: 0.08333333333333333    Occurrences: 12, 14, 15
+ARE    Frequency: 0.027777777777777776    Occurrences: 16
+BLACK    Frequency: 0.027777777777777776    Occurrences: 6
+BLUE    Frequency: 0.05555555555555555    Occurrences: 4, 7
+CAR    Frequency: 0.027777777777777776    Occurrences: 14
+FISH    Frequency: 0.25    Occurrences: 1, 2, 3, 4, 6, 7, 8, 9, 16
+HAS    Frequency: 0.05555555555555555    Occurrences: 11, 14
+LITTLE    Frequency: 0.05555555555555555    Occurrences: 12, 14
+LOT    Frequency: 0.027777777777777776    Occurrences: 15
+NEW    Frequency: 0.027777777777777776    Occurrences: 9
+OF    Frequency: 0.027777777777777776    Occurrences: 16
+OLD    Frequency: 0.027777777777777776    Occurrences: 8
+ONE    Frequency: 0.08333333333333333    Occurrences: 1, 11, 14
+RED    Frequency: 0.027777777777777776    Occurrences: 3
+SAY    Frequency: 0.027777777777777776    Occurrences: 15
+STAR    Frequency: 0.027777777777777776    Occurrences: 12
+THERE    Frequency: 0.027777777777777776    Occurrences: 16
+THIS    Frequency: 0.05555555555555555    Occurrences: 11, 14
+TWO    Frequency: 0.027777777777777776    Occurrences: 2
+WHAT    Frequency: 0.027777777777777776    Occurrences: 15
