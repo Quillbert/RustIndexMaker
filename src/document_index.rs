@@ -142,9 +142,9 @@ impl DocumentIndex {
 }
 
 impl Default for DocumentIndex {
-	fn default() -> Self {
-		Self::new()
-	}
+    fn default() -> Self {
+        Self::new()
+    }
 }
 
 enum Message {

@@ -1,9 +1,9 @@
 use std::cmp;
 use std::collections::BTreeSet;
+use std::fmt;
 use std::sync::atomic::AtomicU32;
 use std::sync::atomic::Ordering;
 use std::sync::Mutex;
-use std::fmt;
 
 #[derive(Debug)]
 pub struct IndexEntry {
@@ -47,16 +47,16 @@ impl IndexEntry {
 }
 
 impl fmt::Display for IndexEntry {
-	fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-		let mut out = format!(
-			"{}    Frequency: {}    Occurrences: ",
-			self.get_word(),
-			self.get_frequency()
-		);
-		let list = format!("{:?}", self.nums_list);
-		out.push_str(&list[1..list.len() - 1]);
-		write!(f, "{}", out)
-	}
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        let mut out = format!(
+            "{}    Frequency: {}    Occurrences: ",
+            self.get_word(),
+            self.get_frequency()
+        );
+        let list = format!("{:?}", self.nums_list);
+        out.push_str(&list[1..list.len() - 1]);
+        write!(f, "{}", out)
+    }
 }
 
 struct ANum {
