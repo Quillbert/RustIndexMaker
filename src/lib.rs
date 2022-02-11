@@ -1,2 +1,2 @@
-pub mod index_entry;
 pub mod document_index;
+pub mod index_entry;

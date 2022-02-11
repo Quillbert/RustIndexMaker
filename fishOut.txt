@@ -2,7 +2,7 @@ fishOut.txt
 Numer of distinct words: 20
 Longest Word: LITTLE
 Most Frequent Word: FISH
-Least Frequent Word: SAY
+Least Frequent Word: THERE
 Shortest Meaningful Word: OF
 A    Frequency: 0.08333333333333333    Occurrences: 12, 14, 15
 ARE    Frequency: 0.027777777777777776    Occurrences: 16
