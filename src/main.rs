@@ -104,25 +104,30 @@ fn write_to_outfile(
     file_name: &str,
     entries: Vec<dashmap::mapref::multiple::RefMulti<'_, String, IndexEntry>>,
 ) -> Result<(), Box<dyn Error>> {
+	
+	let mut out = String::new();
+
     let mut outfile = BufWriter::new(outfile);
 
-    outfile.write_all(file_name.trim().as_bytes())?;
-    outfile.write_all(b"\nNumer of distinct words: ")?;
-    outfile.write_all(index.size().to_string().as_bytes())?;
-    outfile.write_all(b"\nLongest Word: ")?;
-    outfile.write_all(index.get_longest_word().as_bytes())?;
-    outfile.write_all(b"\nMost Frequent Word: ")?;
-    outfile.write_all(index.get_most_frequent_word().as_bytes())?;
-    outfile.write_all(b"\nLeast Frequent Word: ")?;
-    outfile.write_all(index.get_least_frequent_word().as_bytes())?;
-    outfile.write_all(b"\nShortest Meaningful Word: ")?;
-    outfile.write_all(index.get_shortest_meaningful_word().as_bytes())?;
-    outfile.write_all(b"\n")?;
+    out.push_str(&file_name.trim());
+    out.push_str("\nNumer of distinct words: ");
+    out.push_str(&index.size().to_string());
+    out.push_str("\nLongest Word: ");
+    out.push_str(&index.get_longest_word());
+    out.push_str("\nMost Frequent Word: ");
+    out.push_str(&index.get_most_frequent_word());
+    out.push_str("\nLeast Frequent Word: ");
+    out.push_str(&index.get_least_frequent_word());
+    out.push_str("\nShortest Meaningful Word: ");
+    out.push_str(&index.get_shortest_meaningful_word());
+    out.push_str("\n");
 
     for entry in entries {
-        outfile.write_all(entry.to_string().as_bytes())?;
-        outfile.write_all(b"\n")?;
+        out.push_str(&entry.to_string());
+        out.push_str("\n");
     }
+
+	outfile.write_all(out.as_bytes())?;
 
     Ok(())
 }
